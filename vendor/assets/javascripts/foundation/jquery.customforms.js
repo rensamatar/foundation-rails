@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
       } else if ($(sel).hasClass('expand')) {
       	$customSelectSize = 'expand';
       }
-      $customSelect = $('<div class="custom dropdown ' + $customSelectSize + '"><a href="#" class="selector"></a><ul></ul></div>"');
+      $customSelect = $('<div class="custom dropdown ' + $customSelectSize + '"><a href="#" class="selector"></a><ul></ul></div>');
       $options.each(function () {
         $li = $('<li>' + $(this).html() + '</li>');
         $customSelect.find('ul').append($li);
